@@ -9,9 +9,9 @@ import java.util.ArrayList;
  * Created by John Duncan on 11/11/2017.
  */
 
-public class Zoo {
+public class Zoo <T>{
 
-    ArrayList enclosures;
+    ArrayList<T> enclosures;
 
     public Zoo(){
         this.enclosures = new ArrayList();
@@ -22,11 +22,11 @@ public class Zoo {
         return this.enclosures;
     }
 
-    public void addEnclosure(Enclosure enclosure) {
+    public void addEnclosure(T enclosure) {
          this.enclosures.add(enclosure);
     }
 
-    public void removeEnclosure(Enclosure enclosure){
+    public void removeEnclosure(T enclosure){
         this.enclosures.remove(enclosure);
     }
 }

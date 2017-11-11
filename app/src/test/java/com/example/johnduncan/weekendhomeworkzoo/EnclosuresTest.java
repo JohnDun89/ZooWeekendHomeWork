@@ -1,8 +1,11 @@
 package com.example.johnduncan.weekendhomeworkzoo;
 
+import com.example.johnduncan.weekendhomeworkzoo.Animal.Cheetah;
+import com.example.johnduncan.weekendhomeworkzoo.Animal.Cheetah;
 import com.example.johnduncan.weekendhomeworkzoo.Animal.KomonoDragon;
 import com.example.johnduncan.weekendhomeworkzoo.Animal.Tiger;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
@@ -16,6 +19,9 @@ import static junit.framework.Assert.assertNull;
 public class EnclosuresTest {
 
 
+
+
+
     @Test
         public void canAddAnAnimalToEnclosure() {
         Tiger tiger = new Tiger();
@@ -25,13 +31,28 @@ public class EnclosuresTest {
 
     }
 
-    @Test public void canGetAnimalFromPen(){
+    @Test
+    public void canGetAnimalFromPen(){
         KomonoDragon evilLizard = new KomonoDragon();
         Enclosure pen = new Enclosure("Rare lizards");
         pen.addAnimal(evilLizard);
         assertEquals(evilLizard,pen.getAnimal().get(0));
 
     }
+
+    @Test
+    public void canRemoveAnimalFromPen(){
+        Tiger tiger = new Tiger();
+        Cheetah cheetah = new Cheetah();
+        Enclosure pen = new Enclosure("African Big Cats");
+        pen.addAnimal(cheetah);
+        pen.addAnimal(tiger);
+        pen.removeAnimal(tiger);
+        assertEquals(1,pen.getAnimal().size());
+
+
+    }
+
 
 
 

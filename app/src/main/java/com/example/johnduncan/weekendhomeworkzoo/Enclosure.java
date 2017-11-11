@@ -33,4 +33,8 @@ public class Enclosure<T extends Animal> {
         return this.name;
     }
 
+    public void removeAnimal(T animal){
+      this.animals.remove(animal);
+    }
+
 }
