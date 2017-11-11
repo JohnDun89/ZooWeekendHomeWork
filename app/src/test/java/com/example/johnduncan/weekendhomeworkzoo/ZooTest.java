@@ -1,6 +1,8 @@
 package com.example.johnduncan.weekendhomeworkzoo;
 
 import com.example.johnduncan.weekendhomeworkzoo.Animal.BigCat;
+import com.example.johnduncan.weekendhomeworkzoo.Animal.Chameleon;
+import com.example.johnduncan.weekendhomeworkzoo.Animal.Cheetah;
 import com.example.johnduncan.weekendhomeworkzoo.Animal.ColdBloodedReptile;
 import com.example.johnduncan.weekendhomeworkzoo.Animal.Tiger;
 
@@ -34,5 +36,24 @@ public class ZooTest {
         zoo.addEnclosure(enclosure1);
         zoo.removeEnclosure(enclosure);
         assertEquals(1,zoo.getEnclosures().size());
+    }
+
+    @Test
+    public void canGetTotalNumberOfAnimalsInZoo(){
+        Tiger tiger = new Tiger();
+        Cheetah cheetah = new Cheetah();
+        Chameleon chameleon = new Chameleon();
+        Zoo zoo = new Zoo();
+        Enclosure enclosure = new Enclosure("Big Cats");
+        Enclosure enclosure1 = new Enclosure("Lizards");
+        zoo.addEnclosure(enclosure);
+        zoo.addEnclosure(enclosure1);
+        enclosure.addAnimal(tiger);
+        enclosure.addAnimal(tiger);
+        enclosure.addAnimal(cheetah);
+        enclosure1.addAnimal(chameleon);
+        enclosure1.addAnimal(chameleon);
+        assertEquals(5,zoo.getTotalNumberOfAnimals());
+
     }
 }

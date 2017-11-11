@@ -10,6 +10,7 @@ public abstract class Animal {
     Integer cashValue;
     String type;
 
+
     public Animal(){
         this.cashValue = cashValue;
         this.type = type;
@@ -28,7 +29,6 @@ public abstract class Animal {
     public String getAnimalType() {
         return this.type;
     }
-
 
 
 

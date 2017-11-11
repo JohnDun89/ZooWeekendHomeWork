@@ -3,13 +3,15 @@ package com.example.johnduncan.weekendhomeworkzoo;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 
+import com.example.johnduncan.weekendhomeworkzoo.Animal.Animal;
+
 import java.util.ArrayList;
 
 /**
  * Created by John Duncan on 11/11/2017.
  */
 
-public class Zoo <T>{
+public class Zoo <T extends >{
 
     ArrayList<T> enclosures;
 
@@ -28,5 +30,15 @@ public class Zoo <T>{
 
     public void removeEnclosure(T enclosure){
         this.enclosures.remove(enclosure);
+    }
+
+    public int getTotalNumberOfAnimals() {
+        for (T pen : enclosures) {
+        for ( Animal animal : enclosures ) {
+            animal.getAnimal();
+
+        }
+        }
+    return enclosures.size();
     }
 }
