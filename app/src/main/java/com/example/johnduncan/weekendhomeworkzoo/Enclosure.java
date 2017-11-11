@@ -16,6 +16,13 @@ public class Enclosure<T extends Animal> {
         this.animals = new ArrayList<T>();
     }
 
+    public void addAnimal(T animal){
+        this.animals.add(animal);
+    }
 
+    public ArrayList getAnimal(){
+        return this.animals;
+
+    }
 
 }

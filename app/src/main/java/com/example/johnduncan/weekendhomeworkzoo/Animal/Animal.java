@@ -28,4 +28,8 @@ public abstract class Animal {
     public String getAnimalType() {
         return this.type;
     }
+
+
+
+
 }

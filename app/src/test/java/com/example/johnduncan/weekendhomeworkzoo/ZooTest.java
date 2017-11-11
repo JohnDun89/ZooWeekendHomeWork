@@ -1,5 +1,6 @@
 package com.example.johnduncan.weekendhomeworkzoo;
 
+import com.example.johnduncan.weekendhomeworkzoo.Animal.BigCat;
 import com.example.johnduncan.weekendhomeworkzoo.Animal.Tiger;
 
 import junit.framework.Assert;
@@ -16,9 +17,9 @@ public class ZooTest {
 
     @Test
     public void canGetAnimalsFromEnclosure(){
-        Tiger tiger = new Tiger();
+        BigCat bigcat = new BigCat();
         Zoo zoo = new Zoo();
-        zoo.addEnclosure(tiger);
-        assertEquals(tiger,zoo.getEnclosures().get(0));
+        zoo.addEnclosure(bigcat);
+        assertEquals(bigcat,zoo.getEnclosures().get(0));
     }
 }

@@ -4,7 +4,7 @@ package com.example.johnduncan.weekendhomeworkzoo.Animal;
  * Created by John Duncan on 11/11/2017.
  */
 
-public abstract class BigCat extends Animal {
+public class BigCat extends Animal {
 
     String type;
 
