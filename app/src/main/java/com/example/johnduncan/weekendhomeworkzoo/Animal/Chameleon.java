@@ -1,4 +1,4 @@
-package com.example.johnduncan.weekendhomeworkzoo;
+package com.example.johnduncan.weekendhomeworkzoo.Animal;
 
 /**
  * Created by John Duncan on 11/11/2017.
