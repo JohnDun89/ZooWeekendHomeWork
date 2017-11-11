@@ -18,8 +18,9 @@ public class ZooTest {
     @Test
     public void canGetAnimalsFromEnclosure(){
         BigCat bigcat = new BigCat();
+        Enclosure enclosure = new Enclosure<>("Big Cats");
         Zoo zoo = new Zoo();
-        zoo.addEnclosure(bigcat);
-        assertEquals(bigcat,zoo.getEnclosures().get(0));
+        zoo.addEnclosure(enclosure);
+        assertEquals(enclosure,zoo.getEnclosures().get(0));
     }
 }

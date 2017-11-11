@@ -6,20 +6,20 @@ import java.util.ArrayList;
  * Created by John Duncan on 11/11/2017.
  */
 
-public class Zoo<T> {
+public class Zoo {
 
-    ArrayList< T > enclosures;
+    ArrayList enclosures;
 
     public Zoo(){
-        this.enclosures = new ArrayList<T>();
+        this.enclosures = new ArrayList();
     }
 
 
-    public ArrayList<T> getEnclosures() {
+    public ArrayList getEnclosures() {
         return this.enclosures;
     }
 
-    public void addEnclosure(T enclosure) {
+    public void addEnclosure(Enclosure enclosure) {
          this.enclosures.add(enclosure);
 
     }

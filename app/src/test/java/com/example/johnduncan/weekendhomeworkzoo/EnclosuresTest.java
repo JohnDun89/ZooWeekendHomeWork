@@ -19,7 +19,7 @@ public class EnclosuresTest {
     @Test
         public void canAddAnAnimalToEnclosure() {
         Tiger tiger = new Tiger();
-        Enclosure pen = new Enclosure();
+        Enclosure pen = new Enclosure("African Big Cats");
         pen.addAnimal(tiger);
         assertNotNull(pen.getAnimal().get(0));
 
@@ -27,7 +27,7 @@ public class EnclosuresTest {
 
     @Test public void canGetAnimalFromPen(){
         KomonoDragon evilLizard = new KomonoDragon();
-        Enclosure pen = new Enclosure();
+        Enclosure pen = new Enclosure("Rare lizards");
         pen.addAnimal(evilLizard);
         assertEquals(evilLizard,pen.getAnimal().get(0));
 

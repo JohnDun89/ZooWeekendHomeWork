@@ -11,9 +11,14 @@ import java.util.ArrayList;
 public class Enclosure<T extends Animal> {
 
     ArrayList<T> animals;
+    String name;
 
-    public Enclosure(){
+
+
+
+    public Enclosure(String name){
         this.animals = new ArrayList<T>();
+        this.name = name;
     }
 
     public void addAnimal(T animal){
