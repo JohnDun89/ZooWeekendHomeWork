@@ -7,4 +7,17 @@ package com.example.johnduncan.weekendhomeworkzoo.Animal;
 public abstract class Animal {
 
 
+    Integer cashValue;
+
+    public Animal(){
+        this.cashValue = cashValue;
+    }
+
+    public Integer  getValue(){
+        return this.cashValue;
+    }
+
+
+
+
 }
