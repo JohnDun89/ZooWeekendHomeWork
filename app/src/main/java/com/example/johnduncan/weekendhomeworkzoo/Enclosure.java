@@ -27,7 +27,10 @@ public class Enclosure<T extends Animal> {
 
     public ArrayList getAnimal(){
         return this.animals;
+    }
 
+    public String getName(){
+        return this.name;
     }
 
 }

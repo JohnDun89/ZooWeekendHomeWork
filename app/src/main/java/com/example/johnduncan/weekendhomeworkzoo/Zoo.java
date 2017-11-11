@@ -1,5 +1,8 @@
 package com.example.johnduncan.weekendhomeworkzoo;
 
+import android.os.Build;
+import android.support.annotation.RequiresApi;
+
 import java.util.ArrayList;
 
 /**
@@ -21,6 +24,9 @@ public class Zoo {
 
     public void addEnclosure(Enclosure enclosure) {
          this.enclosures.add(enclosure);
+    }
 
+    public void removeEnclosure(Enclosure enclosure){
+        this.enclosures.remove(enclosure);
     }
 }
