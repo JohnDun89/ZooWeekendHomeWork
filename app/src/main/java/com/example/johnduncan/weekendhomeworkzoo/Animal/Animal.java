@@ -25,5 +25,7 @@ public abstract class Animal {
         this.cashValue =+ value;
     }
 
-
+    public String getAnimalType() {
+        return this.type;
+    }
 }
