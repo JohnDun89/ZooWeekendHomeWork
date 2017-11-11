@@ -18,6 +18,7 @@ public abstract class Animal {
     }
 
 
-
-
+    public void setValue(Integer value){
+        this.cashValue =+ value;
+    }
 }

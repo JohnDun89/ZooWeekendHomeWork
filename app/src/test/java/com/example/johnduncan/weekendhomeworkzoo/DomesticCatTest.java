@@ -4,6 +4,8 @@ import com.example.johnduncan.weekendhomeworkzoo.Animal.DomesticCat;
 
 import org.junit.Test;
 
+import static junit.framework.Assert.assertEquals;
+
 /**
  * Created by John Duncan on 11/11/2017.
  */
@@ -11,8 +13,17 @@ import org.junit.Test;
 public class DomesticCatTest {
 
     @Test
-    public void testDomesticCatCanSetValue(){
+    public void testDomesticCatCanGetValue(){
          DomesticCat cat = new DomesticCat();
         cat.getValue();
+    }
+
+    @Test
+    public void testDomesticCatCanSetValue(){
+        DomesticCat cat = new DomesticCat();
+        cat.setValue(100);
+        Integer actual = cat.getValue();
+        Integer expected = 100;
+        assertEquals(expected, actual);
     }
 }
