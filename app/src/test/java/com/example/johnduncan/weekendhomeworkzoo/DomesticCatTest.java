@@ -26,4 +26,10 @@ public class DomesticCatTest {
         Integer expected = 100;
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void testCanGetDomesticCatType(){
+        DomesticCat cat = new DomesticCat();
+        assertEquals("Big Cat",cat.getAnimalType());
+    }
 }

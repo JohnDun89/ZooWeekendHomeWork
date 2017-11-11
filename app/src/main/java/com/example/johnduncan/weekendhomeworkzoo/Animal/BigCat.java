@@ -5,4 +5,14 @@ package com.example.johnduncan.weekendhomeworkzoo.Animal;
  */
 
 public abstract class BigCat extends Animal {
+
+    String type;
+
+    public BigCat(){
+        this.type = "Big Cat";
+    }
+
+    public String getAnimalType() {
+        return this.type;
+    }
 }

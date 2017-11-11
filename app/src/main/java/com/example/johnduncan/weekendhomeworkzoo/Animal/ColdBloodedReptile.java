@@ -5,4 +5,11 @@ package com.example.johnduncan.weekendhomeworkzoo.Animal;
  */
 
 public abstract class ColdBloodedReptile extends Animal {
+
+
+    String type;
+
+    public ColdBloodedReptile() {
+        this.type = "Cold Blooded Reptile";
+    }
 }

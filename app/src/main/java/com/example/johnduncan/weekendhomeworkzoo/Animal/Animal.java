@@ -8,9 +8,12 @@ public abstract class Animal {
 
 
     Integer cashValue;
+    String type;
 
     public Animal(){
         this.cashValue = cashValue;
+        this.type = type;
+
     }
 
     public Integer  getValue(){
@@ -21,4 +24,6 @@ public abstract class Animal {
     public void setValue(Integer value){
         this.cashValue =+ value;
     }
+
+
 }
