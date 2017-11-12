@@ -57,4 +57,17 @@ public class ZooTest {
         enclosure1.addAnimal(chameleon);
         assertEquals(5,zoo.getTotalNumberOfAnimals());
     }
+
+    @Test
+    public void payZooAnimalValue(){
+        Tiger tiger = new Tiger();
+        tiger.setValue(1000);
+        Zoo zoo = new Zoo();
+        zoo.addAnimalvalueToFunds(tiger);
+        int actual = zoo.getFunds();
+        assertEquals(151000,actual);
+
+
+
+    }
 }

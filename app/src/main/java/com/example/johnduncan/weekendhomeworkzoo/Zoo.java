@@ -14,9 +14,11 @@ import java.util.ArrayList;
 public class Zoo <E extends Enclosure>{
 
     ArrayList<E> enclosures;
+    Integer funds;
 
     public Zoo(){
         this.enclosures = new ArrayList();
+        this.funds = 150000;
     }
 
 
@@ -39,6 +41,16 @@ public class Zoo <E extends Enclosure>{
            total += pen.countAnimals();
         }
         return total;
+    }
+
+    public Integer getFunds() {
+        return this.funds;
+    }
+
+    public int addAnimalvalueToFunds(Animal animal){
+        int amount = animal.getValue();
+        int result = this.funds += amount;
+        return result;
     }
 
 

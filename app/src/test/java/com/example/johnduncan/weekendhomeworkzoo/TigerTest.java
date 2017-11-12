@@ -20,4 +20,5 @@ public class TigerTest {
         assertEquals(1000,actual);
 
     }
+    
 }
