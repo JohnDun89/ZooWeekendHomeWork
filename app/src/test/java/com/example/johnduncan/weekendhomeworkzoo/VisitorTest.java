@@ -35,11 +35,4 @@ public class VisitorTest {
         assertEquals(92,visitor.getFunds(),0.1);
         assertEquals(150008, zoo.getFunds(),0.1);
     }
-
-//    @Test
-//    public void (){
-//        Visitor visitor = new Visitor(60,)
-//    }
-
-
 }

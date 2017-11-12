@@ -22,8 +22,6 @@ public class Zoo <E extends Enclosure>{
         this.guests = new ArrayList<>();
     }
 
-
-
     public ArrayList getEnclosures() {
         return this.enclosures;
     }
@@ -93,8 +91,4 @@ public class Zoo <E extends Enclosure>{
         }
         return total;
     }
-
-
-//(enclosures.contains(animal))
-
 }

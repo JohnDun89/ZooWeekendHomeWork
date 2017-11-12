@@ -60,13 +60,7 @@ public class EnclosuresTest {
         pen.addAnimal(tiger);
         pen.removeAnimal(tiger);
         assertEquals(1,pen.getAnimal().size());
-
-
     }
-
-
-
-
 }
 
 
