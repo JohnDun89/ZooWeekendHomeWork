@@ -69,17 +69,12 @@ public class Zoo <E extends Enclosure>{
         if (isAnimlaInPen(animal) == true){
             enclosures.remove(animal);
             addAnimalValueToFunds(animal);
-
-
-
-
         }
-
     }
+
     public Integer getTicket(){
         oneTicketPurchapse(null);
         return this.ticketprice;
-
     }
 
     private void oneTicketPurchapse(Visitor visitor){
@@ -91,6 +86,13 @@ public class Zoo <E extends Enclosure>{
         return this.guests;
     }
 
+    public int totalValueOfAnimals() {
+        int total = 0;
+        for (E pen : enclosures) {
+            total += pen.valueOfAnimalsInPen();
+        }
+        return total;
+    }
 
 
 //(enclosures.contains(animal))

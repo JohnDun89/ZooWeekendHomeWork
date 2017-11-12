@@ -101,10 +101,32 @@ public class ZooTest {
     @Test
     public void whenVisitorBuysTicketAreTheyAddedToGuests(){
         Visitor visitor = new Visitor(100,"Arnold");
-        Zoo zoo =new Zoo();
+        Zoo zoo = new Zoo();
         visitor.buyTicket(zoo.getTicket());
         assertEquals(92,visitor.getFunds(),0.1);
         assertEquals(150008, zoo.getFunds(),0.1);
         assertEquals(1,zoo.currentVisitors().size());
+    }
+
+    @Test
+    public void zooCanCalculateValueOfAllAnimals() {
+        Tiger tiger = new Tiger();
+        tiger.setValue(1000);
+        Cheetah cheetah = new Cheetah();
+        cheetah.setValue(1500);
+        Chameleon chameleon = new Chameleon();
+        chameleon.setValue(100);
+        Zoo zoo = new Zoo();
+        Enclosure enclosure = new Enclosure("Big Cats");
+        Enclosure enclosure1 = new Enclosure("Lizards");
+        zoo.addEnclosure(enclosure);
+        zoo.addEnclosure(enclosure1);
+        enclosure.addAnimal(tiger);
+        enclosure.addAnimal(tiger);
+        enclosure.addAnimal(cheetah);
+        enclosure1.addAnimal(chameleon);
+        enclosure1.addAnimal(chameleon);
+        assertEquals(3700,zoo.totalValueOfAnimals());
+
     }
 }

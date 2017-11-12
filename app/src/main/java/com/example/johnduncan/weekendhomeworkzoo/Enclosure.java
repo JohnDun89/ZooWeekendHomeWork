@@ -41,10 +41,18 @@ public class Enclosure<T extends Animal> {
         return this.animals.size();
     }
 
+    public Integer valueOfAnimalsInPen(){
+       Integer total = 0;
+      for ( T animal : animals){
+          total += animal.getValue();
+      }return total;
+    }
+
     public boolean contains(Animal animal) {
         if (this.animals.contains(animal))
             return true;
         return false;
     }
+
 
 }
