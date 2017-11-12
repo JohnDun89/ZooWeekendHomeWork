@@ -13,11 +13,13 @@ public class Zoo <E extends Enclosure>{
     ArrayList<E> enclosures;
     Integer funds;
     Integer ticketprice;
+    ArrayList<Visitor> guests;
 
     public Zoo(){
         this.enclosures = new ArrayList();
         this.funds = 150000;
         this.ticketprice = 8;
+        this.guests = new ArrayList<>();
     }
 
 

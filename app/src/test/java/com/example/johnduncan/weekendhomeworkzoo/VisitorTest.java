@@ -15,15 +15,23 @@ public class VisitorTest {
 
     @Test
     public void visitorHasName(){
-        Visitor visitor = new Visitor();
+        Visitor visitor = new Visitor(30,"Mark");
         assertEquals(null,visitor.getName());
     }
 
     @Test
     public void canSetVisitorName(){
-        Visitor visitor = new Visitor();
+        Visitor visitor = new Visitor(85,null);
         visitor.setName("Sophie");
         assertEquals("Sophie",visitor.getName());
 
     }
+
+    @Test
+    public void visitorCanBuyTicket(){
+        Visitor visitor = new Visitor(100,"Arnold");
+        Zoo zoo =new Zoo();
+    }
+
+
 }

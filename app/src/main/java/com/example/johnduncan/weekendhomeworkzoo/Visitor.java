@@ -10,7 +10,7 @@ public class Visitor {
      String postcode;
      Integer funds;
 
-    public Visitor() {
+    public Visitor(Integer funds, String name) {
         this.name = name;
         this.postcode = postcode;
         this.funds = funds;
