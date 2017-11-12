@@ -95,6 +95,6 @@ public class ZooTest {
     @Test
     public void zooHasTicketPrice(){
         Zoo zoo = new Zoo();
-        assertEquals(8,zoo.getTicketPrice(),0.1);
+        assertEquals(8,zoo.getTicket(),0.1);
     }
 }
