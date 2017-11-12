@@ -15,4 +15,8 @@ public class Visitor {
         this.postcode = postcode;
         this.funds = funds;
     }
+
+    public String getName() {
+        return name;
+    }
 }
