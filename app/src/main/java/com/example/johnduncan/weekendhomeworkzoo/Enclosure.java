@@ -41,4 +41,10 @@ public class Enclosure<T extends Animal> {
         return this.animals.size();
     }
 
+    public boolean contains(Animal animal) {
+        if (this.animals.contains(animal))
+            return true;
+        return false;
+    }
+
 }

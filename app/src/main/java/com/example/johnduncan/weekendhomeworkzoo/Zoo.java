@@ -1,8 +1,5 @@
 package com.example.johnduncan.weekendhomeworkzoo;
 
-import android.os.Build;
-import android.support.annotation.RequiresApi;
-
 import com.example.johnduncan.weekendhomeworkzoo.Animal.Animal;
 
 import java.util.ArrayList;
@@ -47,11 +44,24 @@ public class Zoo <E extends Enclosure>{
         return this.funds;
     }
 
-    public int addAnimalvalueToFunds(Animal animal){
+    public int addAnimalValueToFunds(Animal animal){
         int amount = animal.getValue();
         int result = this.funds += amount;
         return result;
     }
 
+    public boolean isAnimlaInPen(Animal animal) {
+        for (E pen : enclosures) {
+            if (pen.contains(animal)) {
+                return true;
+            }
+            else break;
+        }
+        return false;
+    }
+
+
+
+//(enclosures.contains(animal))
 
 }

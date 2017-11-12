@@ -63,11 +63,24 @@ public class ZooTest {
         Tiger tiger = new Tiger();
         tiger.setValue(1000);
         Zoo zoo = new Zoo();
-        zoo.addAnimalvalueToFunds(tiger);
+        zoo.addAnimalValueToFunds(tiger);
         int actual = zoo.getFunds();
         assertEquals(151000,actual);
+    }
 
+    @Test
+    public void booleanPenContainAnimal(){
+        Zoo zoo = new Zoo();
+        Enclosure enclosure = new Enclosure("Big Cats");
+        Tiger tiger = new Tiger();
+        zoo.addEnclosure(enclosure);
+        enclosure.addAnimal(tiger);
+        assertEquals(true,zoo.isAnimlaInPen(tiger));
 
+    }
+
+    @Test
+    public void canSellAnimalCallingPayZooAndRemoveAnimal(){
 
     }
 }
