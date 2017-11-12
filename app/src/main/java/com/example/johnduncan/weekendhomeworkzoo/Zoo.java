@@ -53,11 +53,24 @@ public class Zoo <E extends Enclosure>{
     public boolean isAnimlaInPen(Animal animal) {
         for (E pen : enclosures) {
             if (pen.contains(animal)) {
+                pen.removeAnimal(animal);
                 return true;
             }
             else break;
         }
         return false;
+    }
+
+    public void sellAnimal(Animal animal){
+        if (isAnimlaInPen(animal) == true){
+            enclosures.remove(animal);
+            addAnimalValueToFunds(animal);
+
+
+
+
+        }
+
     }
 
 

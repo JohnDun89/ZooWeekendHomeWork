@@ -80,7 +80,15 @@ public class ZooTest {
     }
 
     @Test
-    public void canSellAnimalCallingPayZooAndRemoveAnimal(){
-
+    public void canSellAnimal(){
+        Zoo zoo = new Zoo();
+        Enclosure enclosure = new Enclosure("Big Cats");
+        Tiger tiger = new Tiger();
+        tiger.setValue(1000);
+        zoo.addEnclosure(enclosure);
+        enclosure.addAnimal(tiger);
+        zoo.sellAnimal(tiger);
+        assertEquals(false,zoo.isAnimlaInPen(tiger));
+        assertEquals(151000,zoo.getFunds(),0.1);
     }
 }
