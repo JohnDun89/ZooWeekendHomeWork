@@ -37,7 +37,7 @@ public class VisitorTest {
     }
 
 //    @Test
-//    public void visitorCanBuyTicket(){
+//    public void (){
 //        Visitor visitor = new Visitor(60,)
 //    }
 

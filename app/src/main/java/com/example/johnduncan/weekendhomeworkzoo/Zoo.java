@@ -77,13 +77,18 @@ public class Zoo <E extends Enclosure>{
 
     }
     public Integer getTicket(){
-        oneTicketPurchapse();
+        oneTicketPurchapse(null);
         return this.ticketprice;
 
     }
 
-    private void oneTicketPurchapse(){
+    private void oneTicketPurchapse(Visitor visitor){
         this.funds += ticketprice;
+        this.guests.add(visitor);
+    }
+
+    public ArrayList currentVisitors(){
+        return this.guests;
     }
 
 
