@@ -37,4 +37,8 @@ public class Enclosure<T extends Animal> {
       this.animals.remove(animal);
     }
 
+    public int countAnimals(){
+        return this.animals.size();
+    }
+
 }

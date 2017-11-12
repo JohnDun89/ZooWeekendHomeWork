@@ -11,34 +11,35 @@ import java.util.ArrayList;
  * Created by John Duncan on 11/11/2017.
  */
 
-public class Zoo <T extends >{
+public class Zoo <E extends Enclosure>{
 
-    ArrayList<T> enclosures;
+    ArrayList<E> enclosures;
 
     public Zoo(){
         this.enclosures = new ArrayList();
     }
 
 
+
     public ArrayList getEnclosures() {
         return this.enclosures;
     }
 
-    public void addEnclosure(T enclosure) {
+    public void addEnclosure(E enclosure) {
          this.enclosures.add(enclosure);
     }
 
-    public void removeEnclosure(T enclosure){
+    public void removeEnclosure(E enclosure){
         this.enclosures.remove(enclosure);
     }
 
     public int getTotalNumberOfAnimals() {
-        for (T pen : enclosures) {
-        for ( Animal animal : enclosures ) {
-            animal.getAnimal();
-
+        int total = 0;
+        for(E pen : enclosures) {
+           total += pen.countAnimals();
         }
-        }
-    return enclosures.size();
+        return total;
     }
+
+
 }

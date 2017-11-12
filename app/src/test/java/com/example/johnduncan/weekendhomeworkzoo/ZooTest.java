@@ -38,6 +38,8 @@ public class ZooTest {
         assertEquals(1,zoo.getEnclosures().size());
     }
 
+
+
     @Test
     public void canGetTotalNumberOfAnimalsInZoo(){
         Tiger tiger = new Tiger();
@@ -54,6 +56,5 @@ public class ZooTest {
         enclosure1.addAnimal(chameleon);
         enclosure1.addAnimal(chameleon);
         assertEquals(5,zoo.getTotalNumberOfAnimals());
-
     }
 }

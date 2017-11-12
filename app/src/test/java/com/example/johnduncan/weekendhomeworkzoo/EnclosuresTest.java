@@ -41,6 +41,17 @@ public class EnclosuresTest {
     }
 
     @Test
+    public void testCountAnimals() {
+        KomonoDragon evilLizard = new KomonoDragon();
+        KomonoDragon evilLizard1 = new KomonoDragon();
+        Enclosure pen = new Enclosure("Rare lizards");
+        pen.addAnimal(evilLizard);
+        pen.addAnimal(evilLizard1);
+        assertEquals(2,pen.countAnimals());
+
+    }
+
+    @Test
     public void canRemoveAnimalFromPen(){
         Tiger tiger = new Tiger();
         Cheetah cheetah = new Cheetah();
