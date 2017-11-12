@@ -23,4 +23,12 @@ public class Visitor {
     public void setName(String name) {
         this.name = name;
     }
+
+    public Integer getFunds() {
+        return funds;
+    }
+
+    public void buyTicket(Integer charge) {
+        this.funds -= charge;
+    }
 }

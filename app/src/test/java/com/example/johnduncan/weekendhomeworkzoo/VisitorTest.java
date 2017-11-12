@@ -31,7 +31,14 @@ public class VisitorTest {
     public void visitorCanBuyTicket(){
         Visitor visitor = new Visitor(100,"Arnold");
         Zoo zoo =new Zoo();
+        visitor.buyTicket(zoo.getTicketPrice());
+        assertEquals(92,visitor.getFunds(),0.1);
     }
+
+//    @Test
+//    public void visitorCanBuyTicket(){
+//        Visitor visitor = new Visitor(60,)
+//    }
 
 
 }
