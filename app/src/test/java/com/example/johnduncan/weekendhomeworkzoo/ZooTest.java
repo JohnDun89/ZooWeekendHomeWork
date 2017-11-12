@@ -91,4 +91,10 @@ public class ZooTest {
         assertEquals(false,zoo.isAnimlaInPen(tiger));
         assertEquals(151000,zoo.getFunds(),0.1);
     }
+
+    @Test
+    public void zooHasTicketPrice(){
+        Zoo zoo = new Zoo();
+        assertEquals(8,zoo.getTicketPrice(),0.1);
+    }
 }
